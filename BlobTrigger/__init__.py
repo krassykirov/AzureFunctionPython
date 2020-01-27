@@ -8,7 +8,7 @@ def main(myblobin: func.InputStream, myblobout: func.Out[bytes]):
                  f"Name: {myblobin.name}\n"
                  f"Name: {myblobin.uri}\n")
 
-    '''connect_str = os.getenv('AzureWebJobsStorage')
+    connect_str = os.getenv('AzureWebJobsStorage')
     # Copy the Blob to Output Container
     blob_service_client = BlobServiceClient.from_connection_string(connect_str)
     source_blob = myblobin.name
@@ -28,5 +28,5 @@ def main(myblobin: func.InputStream, myblobout: func.Out[bytes]):
             copied_blob.abort_copy(copy_id)
             props = copied_blob.get_blob_properties()
             logging.info('Aborting Operation..')
-            #print(props.copy.status)'''
+
 
