@@ -26,7 +26,6 @@ def main(myblobin: func.InputStream, myblobout: func.Out[bytes]):
             props = copied_blob.get_blob_properties()
             copy_id = props.copy.id
             copied_blob.abort_copy(copy_id)
-            props = copied_blob.get_blob_properties()
             logging.info('Aborting Operation..')
 
 
