@@ -7,13 +7,6 @@
       "direction": "in",
       "queueName": "pykrqueue",
       "connection": "AzureWebJobsStorage"
-    },
-    {
-      "name": "myblobout",
-      "type": "blob",
-      "direction": "out",
-      "path": "input/{queueTrigger}",
-      "connection": "AzureWebJobsStorage"
     }
   ]
 }

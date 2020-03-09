@@ -1,10 +1,9 @@
 import logging, os, time
-from azure.storage.blob import BlobServiceClient
+#from azure.storage.blob import BlobServiceClient
 import azure.functions as func
 
-
 def main(myblobin: func.InputStream, myblobout: func.Out[bytes]):
-    logging.info(f"Python blob trigger function processed blob \n"
+    '''logging.info(f"Python blob trigger function processed blob \n"
                  f"Name: {myblobin.name}\n"
                  f"Name: {myblobin.uri}\n")
 
@@ -26,6 +25,6 @@ def main(myblobin: func.InputStream, myblobout: func.Out[bytes]):
             props = copied_blob.get_blob_properties()
             copy_id = props.copy.id
             copied_blob.abort_copy(copy_id)
-            logging.info('Aborting Operation..')
+            logging.info('Aborting Operation..')'''
 
 

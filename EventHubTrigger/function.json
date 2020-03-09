@@ -1,0 +1,14 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "event",
+      "direction": "in",
+      "eventHubName": "kreventhub",
+      "connection": "event_hub_connection",
+      "cardinality": "many",
+      "consumerGroup": "$Default"
+    }
+  ]
+}

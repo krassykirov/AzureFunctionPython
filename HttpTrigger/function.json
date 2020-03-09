@@ -2,10 +2,11 @@
   "scriptFile": "__init__.py",
   "bindings": [
     {
-      "authLevel": "function",
       "type": "httpTrigger",
+      "authLevel": "anonymous",
       "direction": "in",
       "name": "req",
+      "dataType": "binary",
       "methods": [
         "get",
         "post"
